@@ -27,6 +27,7 @@ test("gives each <ProjectItem> a key based on the project id", () => {
   let errorSpy = jest.spyOn(global.console, "error");
   render(<ProjectList projects={projects} />);
 
+
   expect(errorSpy).not.toHaveBeenCalled();
 
   errorSpy.mockRestore();
